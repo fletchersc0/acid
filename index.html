@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ACID — Adaptive Cognition & Inferential Decision‑making Network</title>
+  <style>
+    /* ——— Minimal theme inspired by your template: clean lines & simple layout ——— */
+    :root{
+      --bg:#ffffff;
+      --fg:#000000;
+      --rule:#000000;
+      --muted:#555;
+      --link:#000;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font:16px/1.45 "Times New Roman", Times, serif;
+      background:var(--bg);
+      color:var(--fg);
+    }
+
+    /* Header & footer lines */
+    header, footer{
+      position:sticky;
+      left:0; right:0;
+      background:var(--bg);
+      z-index:10;
+    }
+    header{ top:0; border-bottom:1px solid var(--rule); }
+    footer{ bottom:0; border-top:1px solid var(--rule); }
+
+    .bar{
+      display:flex; align-items:center; justify-content:space-between;
+      min-height:56px; padding:0 1rem;
+    }
+    .brand{
+      font-weight:bold; letter-spacing:.02em; text-decoration:none; color:inherit;
+    }
+    .tagline{ font-size:.95rem; color:var(--muted); }
+
+    /* Two‑column layout with a vertical rule */
+    .wrap{
+      display:grid;
+      grid-template-columns: 240px 1fr;
+      min-height: calc(100vh - 112px);
+    }
+    nav{
+      border-right:1px solid var(--rule);
+      padding:1rem;
+    }
+    main{
+      padding:1rem;
+      overflow:auto;
+    }
+
+    /* Nav index with simple lines */
+    nav ul{ list-style:none; margin:0; padding:0; }
+    nav li{ border-bottom:1px solid var(--rule); }
+    nav li:first-child{ border-top:1px solid var(--rule); }
+    nav a{
+      display:block; padding:.6rem .25rem;
+      text-decoration:none; color:var(--link);
+    }
+    nav a:hover{ text-decoration:underline; text-decoration-style:dotted; }
+
+    /* Content sections */
+    section{ scroll-margin-top:72px; margin-bottom:1.25rem; }
+    section h2{
+      font-size:1rem; font-weight:bold;
+      padding-bottom:.5rem; margin:0 0 .75rem 0;
+      border-bottom:1px solid var(--rule);
+    }
+    p{ margin:0 0 1rem 0; text-align:justify; }
+    .small{ font-size:.95rem; color:var(--muted); }
+    .grid-2{
+      display:grid; grid-template-columns: 1fr 1fr; gap:1rem;
+    }
+    .box{
+      padding:.75rem; border:1px solid var(--rule);
+    }
+    .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+
+    /* Simple table lines */
+    table{ border-collapse:collapse; width:100%; }
+    td, th{ border:1px solid var(--rule); padding:.5rem; text-align:left; }
+
+    /* Mobile */
+    @media (max-width: 800px){
+      .wrap{ grid-template-columns: 1fr; }
+      nav{ border-right:none; border-bottom:1px solid var(--rule); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <a class="brand" href="#top">ACID — Adaptive Cognition & Inferential Decision‑making</a>
+      <div class="tagline">A reading & research network at RMIT</div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <nav aria-label="Index">
+      <ul>
+        <li><a href="#about">About ACID</a></li>
+        <li><a href="#who">Who it's for</a></li>
+        <li><a href="#format">Weekly rhythm</a></li>
+        <li><a href="#whitepages">Researcher “White Pages”</a></li>
+        <li><a href="#join">Join & contact</a></li>
+        <li><a href="#host">Host</a></li>
+      </ul>
+    </nav>
+
+    <main id="top">
+      <section id="about">
+        <h2>About ACID</h2>
+        <p>
+          <strong>Adaptive Cognition and Inferential Decision‑making (ACID) network.</strong>
+          A fundamental challenge in cognitive science is to explain how humans (and other agents) learn hidden structures,
+          navigate uncertainty, and make decisions, often while subject to cognitive biases and limited computational resources.
+          ACID is a collaboration of multiple universities meeting at RMIT that provides a dedicated platform for exploring these themes, with a focus on methodologies that illuminate learning, decision‑making processes, and their intersections with biases.
+        </p>
+        <p>
+          ACID brings together researchers from diverse disciplines including psychology, neuroscience, and computer science who share an interest in the mechanisms driving adaptive behaviour. We host informal presentations of ongoing work and encourage open discussion, offering space for constructive critique and collaborative exchange.
+        </p>
+      </section>
+
+      <section id="who">
+        <h2>Who it's for</h2>
+        <p>The forum is targeted towards HDR students. In particular, we've started a study group for <strong>PhD candidates researching computational cognitive science and decision‑making</strong>.</p>
+      </section>
+
+      <section id="format">
+        <h2>Weekly rhythm</h2>
+        <p>We meet <em>one day each week</em> at RMIT (City Campus). Exact day/time and room details are announced via the mailing list.</p>
+        <div class="grid-2">
+          <div class="box">
+            <p class="small mono">A typical day</p>
+            <table>
+              <tbody>
+                <tr><th style="width:8rem">10:00–12:00</th><td>Quiet co‑work</td></tr>
+                <tr><th>12:00–13:00</th><td>Break / Lunch</td></tr>
+                <tr><th>13:00–14:00</th><td>Skill‑share or problem‑share (short demo)</td></tr>
+                <tr><th>14:00–16:00</th><td>Quiet co‑work</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="box">
+            <p class="small"><strong>What to expect</strong></p>
+            <ul>
+              <li>Short, informal demos of ongoing work.</li>
+              <li>Open discussion and constructive critique.</li>
+              <li>Focus blocks for writing, analysis, and modelling.</li>
+              <li>Cross‑disciplinary methods and theory.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="whitepages">
+        <h2>Researcher “White Pages”</h2>
+        <p>
+          Each demo contributes a small entry to a living <em>White Pages</em>: common problems/solutions documented by the group,
+          plus early‑career researcher contacts. This index will help new members find people, tools, and prior solutions quickly.
+        </p>
+      </section>
+
+      <section id="join">
+        <h2>Join & contact</h2>
+        <p>Announcements (schedule, rooms, speakers) go to the mailing list. New members from any university are welcome.</p>
+        <p>
+          <strong>Join the ACID mailing list:</strong>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNH8KUt9CkdDfYhe7f6Bre_qRmgEjIGwXv3l17MYV3YAKFvw/viewform?usp=dialog">open form</a>
+        </p>
+        <p><strong>Contact:</strong> fletcher.scott@student.rmit.edu.au</p>
+        <p class="small">Location: RMIT University, City Campus (Melbourne). Room details via email.</p>
+      </section>
+
+      <section id="host">
+        <h2>Host</h2>
+        <p>
+          <strong>Fletcher Scott</strong> — PhD Candidate at the RMIT School of Health & Biomedical Sciences and the ARC Centre for Excellence in Automated Decision‑Making and Society (ADM+S).
+          Researching the impact of statistical learning on belief‑updating, especially in political misinformation and its correction.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <div class="bar">
+      <div class="small">ACID @ RMIT — Adaptive Cognition & Inferential Decision‑making</div>
+      <div class="small">© <span id="y"></span></div>
+    </div>
+  </footer>
+
+  <script>
+    // update year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+If you want this embedded in your existing site’s structure (same hea
